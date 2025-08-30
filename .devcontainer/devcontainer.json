@@ -17,9 +17,16 @@
 
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one"],
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "sissel.shopify-liquid",
+        "yzhang.markdown-all-in-one",
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "rebornix.Ruby",
+        "dbaeumer.vscode-eslint"
+      ],
       "settings": {
-        // use prettier code formatter as default formatter
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.configPath": ".prettierrc",
         "editor.formatOnSave": true
@@ -27,5 +34,7 @@
     }
   },
 
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle install && npm install",
   "remoteUser": "vscode"
 }

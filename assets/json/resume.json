@@ -1,36 +1,35 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Ali Faraji",
+    "label": "Machine Learning Specialist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "ali@faraji.info",
+    "phone": "(437) ***-****",
+    "url": "https://faraji.info/",
+    "summary": "A hyper-curious machine learning specialist with a passion for uncovering insights from data.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "4700 Keele St",
+      "postalCode": "ON M3J 1P3",
+      "city": "North York",
+      "countryCode": "CA",
+      "region": "Ontario"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "AliFaraji312230",
+        "url": "https://x.com/AliFaraji312230"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "York University",
+      "position": "Research Assistant",
+      "url": "https://dminer.eecs.yorku.ca/",
+      "startDate": "2022-09-01",
+      "summary": "Assisting in research on machine learning algorithms and their applications.",
+      "highlights": ["Machine Unlearning", "Spatiotemporal Data"]
     }
   ],
   "volunteer": [
