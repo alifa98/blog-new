@@ -1,14 +1,14 @@
 ---
 layout: default
 permalink: /
-title: blog
+title: Home Page
 nav: true
 nav_order: 1
 pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 7
   sort_field: date
   sort_reverse: true
   trail:

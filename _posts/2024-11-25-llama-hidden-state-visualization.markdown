@@ -1,0 +1,140 @@
+---
+layout: post
+title: "Hidden State Visualization of Llama and SmolLM Models"
+date: 2024-11-25 19:37:03 -0500 # output of command `date +"%Y-%m-%d %H:%M:%S %z"`
+description: "Visualizing the hidden states of Llama and SmolLM language models to understand their token prediction capabilities."
+categories: [Machine Learning, LLMs]
+tags: [LLMs, Hidden States, Visualization, UMAP, Llama, SmolLM]
+permalink: "/machine-learning/hidden-state-visualization.html"
+---
+
+I was playing around with hidden states of the language model as I was trying to implement an unlearning/manipulation method. So I thought it would be nice to visualize the hidden states of the model for two samples to show how they learn to predict the classification (the next token). I used the Llama and SmolLM models for this experiment.
+
+The dataset is 25 sentences where the next token would be Toronto, and 25 sentences where the next token should be Montreal. I used the Llama 3.2 and SmolLM versions 1 and 2 models to predict the next token, and then I visualized the hidden states of the models with the help of UMAP to reduce the dimensionality of the hidden states to 2D.
+
+This is an experiment that tells you why you should not use the hidden states of the model in any layer to embed your data or calculate the similarity between the data points. The hidden states are unpredictable and not interpretable. They are learned to predict the next token, and they are not learned to be used as embeddings.
+
+I have created two small datasets:
+
+- One is 25 sentences that are complete and talk about Toronto, and 25 sentences that are complete and talk about Montreal.
+- The second one is 25 sentences that are incomplete and talk about Toronto, and 25 sentences that are incomplete and talk about Montreal, where the immediate next token is the city name to be predicted.
+
+Also, I visualized the hidden state of the last token in each layer as we know that it is used to predict the next token, because the model is autoregressive and predicts the next token based on the hidden state of the last token, which contains all the information of the sentence so far.
+
+## Incomplete Sentences
+
+In these experiments, I used the incomplete sentences to predict the next token. The next token should be the city name, Toronto or Montreal. The model should predict the next token based on the hidden state of the last token in the sentence.
+
+### SmolLM 1.7B for incomplete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 1.7B model for the incomplete sentences dataset." %}
+    </div>
+</div>
+
+### SmolLM 135M for incomplete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm-135m.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 135M model for the incomplete sentences dataset." %}
+    </div>
+</div>
+
+
+### SmolLM2 1.7B for incomplete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm2-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM2 1.7B model for the incomplete sentences dataset." %}
+    </div>
+</div>
+
+
+### Llama 3.2 1B for incomplete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_meta-llama-llama-3.2-1b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 1B model for the incomplete sentences dataset." %}
+    </div>
+</div>
+
+
+### Llama 3.2 3B for incomplete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_meta-llama-llama-3.2-3b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 3B model for the incomplete sentences dataset." %}
+    </div>
+</div>
+
+## Complete Sentences
+
+In these experiments, I used the complete sentences to predict the next token the latest token here is the punctuation mark period. I do not know what is the next token, I am just interested to see how the hidden states are learned to predict the next token based on the sentence.
+
+### SmolLM 1.7B for the complete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 1.7B model for the complete sentences dataset." %}
+    </div>
+</div>
+
+### SmolLM 135M for the complete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm-135m.png" class="img-fluid" caption="cThe visualization of the hidden states of the SmolLM 135M model for the complete sentences dataset.c" %}
+    </div>
+</div>
+
+### SmolLM2 1.7B for the complete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm2-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM2 1.7B model for the complete sentences dataset." %}
+    </div>
+</div>
+
+### Llama 3.2 1B for the complete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_meta-llama-llama-3.2-1b.png" class="img-fluid" caption="cThe visualization of the hidden states of the Llama 3.2 1B model for the complete sentences dataset.c" %}
+    </div>
+</div>
+
+### Llama 3.2 3B for the complete sentences
+
+<div class="row">
+    <div class="col-12 col-md-6 mx-auto d-block">
+        {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_meta-llama-llama-3.2-3b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 3B model for the complete sentences dataset." %}
+    </div>
+</div>
+
+## Interpretation
+
+The visualizations represent the 2D embeddings of the hidden states from multiple layers of different language models (Llama 3.2 and SmolLM variants) trained to predict the next token based on a sequence of tokens. The dimensionality reduction using UMAP reveals the patterns in the hidden state representations for sentences referring to "Toronto" (red points) and "Montreal" (blue points).
+
+### Comparison of Complete vs. Incomplete Sentences
+
+- For incomplete sentences, the hidden states tend to form tighter clusters.
+- For complete sentences, the clusters are less defined in the layers suggestion that the embeddings are just learned to predict the next token and they are not learned to be used as an embedding of city or the context of the sentence.
+
+## Conclusion
+
+This experiment highlights the following key points:
+
+### Hidden States Are Model-Specific and Task-Specific
+
+- The visualizations clearly demonstrate that the hidden states are optimized to predict the next token rather than serve as a general-purpose embedding or similarity measure. Using them for tasks other than what they were trained for (e.g., semantic similarity or clustering) can yield unpredictable results.
+
+### Layer-Wise Variability
+
+- The separation between classes ("Toronto" vs. "Montreal") is not consistent across layers, indicating that different layers capture different aspects of the input sequence. This variability underscores the lack of interpretability of hidden states across layers.
+
+These results provide insights into the limitations of relying on hidden states and the importance of understanding model behavior at a deeper level.
+
+I will try to post more experiments on how we can manipulate the hidden states of the model to unlearn the data or to manipulate the data in a way that the model will not be able to predict the next token correctly.
+
+-- Ali
