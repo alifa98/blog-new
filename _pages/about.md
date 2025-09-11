@@ -1,10 +1,10 @@
 ---
 layout: about
-title: About Me
+title: 👋 About Me
 permalink: /about/
 subtitle: A Machine Learning and Mathematics Enthusiast
 nav: true
-nav_order: 2
+nav_order: 4
 profile:
   align: right
   image: general/profile_pic.jpg

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /
-title: Home Page
+title: Home
 nav: true
 nav_order: 1
 pagination:
