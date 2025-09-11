@@ -18,7 +18,7 @@ In a classifier like SVM (Support Vector Machine), the support vectors—data po
 
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/SVM_different_kernels-support_vector_visualization.png" class="img-fluid" caption="Support Vector Machine (SVM) visualization with decision boundary and support vectors for Poly, Linear, RBF, and Sigmoid kernels." %}
     </div>
 </div>

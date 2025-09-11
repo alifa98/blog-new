@@ -28,7 +28,7 @@ In these experiments, I used the incomplete sentences to predict the next token.
 ### SmolLM 1.7B for incomplete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 1.7B model for the incomplete sentences dataset." %}
     </div>
 </div>
@@ -36,7 +36,7 @@ In these experiments, I used the incomplete sentences to predict the next token.
 ### SmolLM 135M for incomplete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm-135m.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 135M model for the incomplete sentences dataset." %}
     </div>
 </div>
@@ -45,7 +45,7 @@ In these experiments, I used the incomplete sentences to predict the next token.
 ### SmolLM2 1.7B for incomplete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_huggingfacetb-smollm2-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM2 1.7B model for the incomplete sentences dataset." %}
     </div>
 </div>
@@ -54,7 +54,7 @@ In these experiments, I used the incomplete sentences to predict the next token.
 ### Llama 3.2 1B for incomplete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_meta-llama-llama-3.2-1b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 1B model for the incomplete sentences dataset." %}
     </div>
 </div>
@@ -63,7 +63,7 @@ In these experiments, I used the incomplete sentences to predict the next token.
 ### Llama 3.2 3B for incomplete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis_meta-llama-llama-3.2-3b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 3B model for the incomplete sentences dataset." %}
     </div>
 </div>
@@ -75,7 +75,7 @@ In these experiments, I used the complete sentences to predict the next token th
 ### SmolLM 1.7B for the complete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM 1.7B model for the complete sentences dataset." %}
     </div>
 </div>
@@ -83,7 +83,7 @@ In these experiments, I used the complete sentences to predict the next token th
 ### SmolLM 135M for the complete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm-135m.png" class="img-fluid" caption="cThe visualization of the hidden states of the SmolLM 135M model for the complete sentences dataset.c" %}
     </div>
 </div>
@@ -91,7 +91,7 @@ In these experiments, I used the complete sentences to predict the next token th
 ### SmolLM2 1.7B for the complete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_huggingfacetb-smollm2-1.7b.png" class="img-fluid" caption="The visualization of the hidden states of the SmolLM2 1.7B model for the complete sentences dataset." %}
     </div>
 </div>
@@ -99,7 +99,7 @@ In these experiments, I used the complete sentences to predict the next token th
 ### Llama 3.2 1B for the complete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_meta-llama-llama-3.2-1b.png" class="img-fluid" caption="cThe visualization of the hidden states of the Llama 3.2 1B model for the complete sentences dataset.c" %}
     </div>
 </div>
@@ -107,7 +107,7 @@ In these experiments, I used the complete sentences to predict the next token th
 ### Llama 3.2 3B for the complete sentences
 
 <div class="row">
-    <div class="col-12 col-md-6 mx-auto d-block">
+    <div class="col-12 col-md-12 mx-auto d-block">
         {% include figure.liquid path="/assets/img/hidden_states_llms/hidden_state_vis-c-s_meta-llama-llama-3.2-3b.png" class="img-fluid" caption="The visualization of the hidden states of the Llama 3.2 3B model for the complete sentences dataset." %}
     </div>
 </div>
