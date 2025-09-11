@@ -17,7 +17,7 @@ keywords: Ali Faraji, blog, machine learning, computer science.
 lang: en
 icon: general/favicon.png
 
-url: https://blog2.faraji.info
+url: https://blog.faraji.info
 baseurl: /
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
