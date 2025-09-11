@@ -9,15 +9,29 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-home-page",
-          title: "Home Page",
+  },{id: "nav-home",
+          title: "Home",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/index.html";
           },
+        },{id: "nav-inspiration-shelf",
+          title: "🤓 Inspiration Shelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/inspiration-shelf/";
+          },
+        },{id: "nav-shower-thoughts",
+          title: "🚿 Shower Thoughts",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/shower-thoughts/";
+          },
         },{id: "nav-about-me",
-          title: "About Me",
+          title: "👋 About Me",
           description: "",
           section: "Navigation",
           handler: () => {
