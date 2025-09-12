@@ -6,6 +6,7 @@ decription: "Can we train a foundation model for trajectory data? In this post, 
 categories: [Foundation Models, LLMs]
 tags: [Trajectory Data, Foundation Models, Pretraining, GPS, Machine Learning]
 permalink: "/machine-learning/trajectory-foundation-model.html"
+giscus_comments: true
 ---
 
 ## Introduction

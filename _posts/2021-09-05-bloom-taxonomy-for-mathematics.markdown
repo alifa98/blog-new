@@ -6,6 +6,7 @@ description: "We are going to review a short but interesting description of Bloo
 categories: [Math, Education]
 tags: [Bloom's Taxonomy, Education in Math]
 permalink: "/math/tool/bloom-taxonomy.html"
+giscus_comments: true
 ---
 
 We shall start with the definition of bloom's Taxonomy.

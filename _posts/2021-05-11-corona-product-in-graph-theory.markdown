@@ -7,6 +7,7 @@ categories: [Math, Graph Theory]
 tags: [Corona Product, Graph Product]
 permalink: "/math/graph-theory/corona-product.html"
 thumbnail: "/assets/img/corona_product/G_corona_H_first_step.png"
+giscus_comments: true
 ---
 
 If you are interested in mathematics, you probably heard about graph theory and know what it is.

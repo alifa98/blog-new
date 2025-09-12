@@ -6,6 +6,7 @@ description: ""
 categories: [NetworkX, Python]
 tags: [Corona Product, Graph Product, NetworkX, Python]
 permalink: "/python/networkx/corona-product.html"
+giscus_comments: true
 ---
 
 Hi, I just want to announce that my contribution will be released in networkX 3.0, which adds corona product. [NetworkX](https://github.com/networkx/networkx) is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks.

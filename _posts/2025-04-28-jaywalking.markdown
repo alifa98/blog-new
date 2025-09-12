@@ -6,6 +6,7 @@ description: "Jaywalking and its impact on traffic flow: An exploration of optim
 categories: [Optimization, Urban Planning]
 tags: [Jaywalking, Traffic Flow, Optimization, Urban Planning, Simulation]
 permalink: "/optimization/jay-walking-1.html"
+giscus_comments: true
 ---
 
 Today I was walking to the university. There is this intersection where the red light is usually on for a long time. I was standing at the red light for pedestrians and saw a person jaywalking because there were no cars. People usually cross this street even when the light is red. I was thinking is this a good thing for traffic flow?

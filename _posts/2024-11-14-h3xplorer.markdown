@@ -6,6 +6,7 @@ description: "H3xplorer is an online tool for creating and exploring hexagonal m
 categories: [Visualization, Geospatial]
 tags: [H3, Hexagonal Mapping, Geospatial Analysis, Data Visualization]
 permalink: "/visualization/h3xplorer.html"
+giscus_comments: true
 ---
 
 I am excited to launch **H3xplorer**, an online tool for creating and exploring hexagonal maps using Uber’s H3 system. Designed for data scientists, urban planners, and geospatial enthusiasts, H3xplorer transforms raw geographic data into hexagon grids, making it easier to visualize patterns, density, and flows.

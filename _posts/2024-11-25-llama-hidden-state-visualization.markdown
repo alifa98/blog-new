@@ -6,6 +6,7 @@ description: "Visualizing the hidden states of Llama and SmolLM language models 
 categories: [Machine Learning, LLMs]
 tags: [LLMs, Hidden States, Visualization, UMAP, Llama, SmolLM]
 permalink: "/machine-learning/hidden-state-visualization.html"
+giscus_comments: true
 ---
 
 I was playing around with hidden states of the language model as I was trying to implement an unlearning/manipulation method. So I thought it would be nice to visualize the hidden states of the model for two samples to show how they learn to predict the classification (the next token). I used the Llama and SmolLM models for this experiment.

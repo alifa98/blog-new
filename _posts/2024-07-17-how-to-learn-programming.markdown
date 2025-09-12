@@ -6,6 +6,7 @@ description: "Rethinking how programming is taught by focusing on concepts and p
 categories: [Programming, Education]
 tags: [Programming Education, Learning Programming, Teaching Programming, Computer Science]
 permalink: "/programming/how-to-learn-programming.htm"
+giscus_comments: true
 ---
 
 In the bustling corridors of a university, I recently encountered a sobering truth that left me both saddened and reflective.

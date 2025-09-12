@@ -6,6 +6,7 @@ description: "Exploring the concept of training data poisoning in Large Language
 categories: [LLMs, Security, Machine Learning]
 tags: [LLMs, Training Data, Poisoning, Attack, Machine Learning]
 permalink: "/llms/training-data-poisoning.html"
+giscus_comments: true
 ---
 
 There are numerous methods for jailbreaking Large Language Models (LLMs), such as ChatGPT, that one can find across the internet. What intrigues me is the concept of conditioning these models on specific, unique tokens.

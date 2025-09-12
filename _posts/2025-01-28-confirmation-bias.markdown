@@ -6,6 +6,7 @@ description: "Exploring the concept of confirmation bias, its impact on decision
 categories: [Cognitive Science, Psychology]
 tags: [Cognitive Bias, Confirmation Bias, Critical Thinking, Decision Making]
 permalink: "/cognitive-science/confirmation-bias.html"
+giscus_comments: true
 ---
 
 Confirmation bias is a cognitive bias that affects the way we interpret information and make decisions. It refers to **the tendency to search for, interpret, favor, and recall information that confirms our preexisting beliefs or hypotheses.** This bias can lead to errors in judgment and decision-making, as it can prevent us from considering alternative viewpoints or evidence that contradicts our beliefs. This can happen in various contexts, such as research, politics, and everyday life.

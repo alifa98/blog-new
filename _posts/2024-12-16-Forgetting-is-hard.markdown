@@ -6,6 +6,7 @@ description: "Reflecting on the challenges of machine unlearning discussed at Ne
 categories: [Machine Learning, Privacy]
 tags: [Machine Unlearning, Memorization, Generalization, SVM, Knowledge Hierarchy]
 permalink: "/machine-learning/challenges-of-machine-unlearning.html"
+giscus_comments: true
 ---
 
 Recently, I attended the NeurIPS 2024 conference and encountered many fascinating papers and talks. Among these discussions, a recurring theme emerged: machine unlearning, particularly in the context of defining and quantifying unlearning.

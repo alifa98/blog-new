@@ -6,6 +6,7 @@ description: "Are you ready to cut into some π (Pi) facts that are both tasty a
 categories: [Math, Education]
 tags: [Pi, Pi Day, Mathematics]
 permalink: "/math/Pi-day.html"
+giscus_comments: true
 ---
 
 Are you ready to cut into some $\pi$ (Pi) facts that are both tasty and educational? Let us dive into the world of Pi, which has no end.

@@ -6,6 +6,7 @@ description: "Yesterday I came across a blog post from the Anthropic team about 
 categories: [Machine Learning, Safety, LLMs]
 tags: [Subliminal Learning, AI Safety, Ethics, Inference Attacks, Human Cognition]
 permalink: "/machine-learning/subliminal-learning.html"
+giscus_comments: true
 ---
 
 They have published a blog post[^subliminal-blog] and a paper[^subliminal-paper] on this topic, and they have also released a GitHub repository[^subliminal-github] with the code.

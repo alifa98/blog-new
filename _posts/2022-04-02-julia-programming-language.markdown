@@ -6,6 +6,7 @@ description: "Exploring the Julia programming language"
 categories: [Julia]
 tags: [Julia, Programming Language, Data Science, Machine Learning]
 permalink: "/julia/hey-julia.html"
+giscus_comments: true
 ---
 
 Hi, Julia is definitely worth considering if you're looking for a new programming language to learn in 2022. It's designed for high performance and has been gaining popularity lately as the future of machine learning.

@@ -6,6 +6,7 @@ description: "Exploring the concept of the right to be forgotten in the context 
 categories: [LLMs, Privacy, Machine Learning]
 tags: [Machine Unlearning, Right to be Forgotten, Data Privacy, AI Ethics]
 permalink: "/machine-learning/right-to-be-forgotten.htm"
+giscus_comments: true
 ---
 
 I'm pursuing a master's in machine learning. The problem at hand is that we want to remove facts that have been learned by machines. We don't want to necessarily degrade the accuracy.

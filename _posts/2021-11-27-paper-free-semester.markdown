@@ -6,6 +6,7 @@ description: "I am going to write about how to have a paper-free semester."
 categories: [Environment]
 tags: [Paper, Environment, Education]
 permalink: "/environment/paper-free-semester.html"
+giscus_comments: true
 ---
 
 We have two issues to address, the reading part (Books, Slides, Papers, and so on) and the writing part (Assignments, Homeworks, Reports, Proposals, and so on)

@@ -6,6 +6,7 @@ description: "Exploring the security risks associated with using ChatGPT-generat
 categories: [Security]
 tags: [ChatGPT, Security, Ace Tools, Python, Libraries]
 permalink: "/security/chat-gpt-internal-lib-ace-tools.html"
+giscus_comments: true
 ---
 
 I was asking ChatGPT for analysis and table generation on some data, and I noticed that when it wants to provide the output of the analysis (output of code execution), in some cases, it uses a library called `ace_tools` (specifically while showing a table from a pandas DataFrame). I copy-pasted the code to regenerate the table, but it did not run because I did not have the aforementioned library. My immediate thought was to install the library using `pip install ace-tools`, but that did not work.

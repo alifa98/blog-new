@@ -99,10 +99,10 @@ related_blog_posts:
   max_related: 5
 
 giscus:
-  repo: alifa/blog
-  repo_id: MDEwOlJlcG9zaXRvcnkzNjExODQ5OTA=
+  repo: alifa98/blog-new
+  repo_id: R_kgDOPjkt-w
   category: Comments
-  category_id: DIC_kwDOFYc-3s4CvUJg
+  category_id: DIC_kwDOPjkt-84CvVaP
   mapping: title
   strict: 1
   reactions_enabled: 1
@@ -112,7 +112,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.

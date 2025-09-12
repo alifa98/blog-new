@@ -6,6 +6,7 @@ description: "Exploring the concept of machine unlearning in artificial intellig
 categories: [Machine Learning, Privacy]
 tags: [Machine Unlearning, Data Privacy, Ethical AI, Model Editing]
 permalink: "/machine-learning/machine-unlearning.html"
+giscus_comments: true
 ---
 
 I am writing on an open problem in artificial intelligence (AI) and machine learning (ML) called machine unlearning. The problem is about how to remove the effect of the data from the model and put it in a state as if the data never has been seen by the model. This is just a definition not a solution.
