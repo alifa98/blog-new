@@ -5,6 +5,7 @@ date: 2025-08-16 21:29:04 -0400
 description: "I’ve always wanted to write about game theory but never did. Recently, I started flipping through my old game theory books and came across mechanism design. Today, I’ll mention something that I think you can also use in your life: division problems and their different variations."
 categories: [Math, Game Theory]
 tags: [Fair Division, Envy-Free, Cake-Cutting, Moving-Knife, Proportional Division]
+thumbnail: /assets/img/cake-cutting.png
 ---
 
 ## Introduction
