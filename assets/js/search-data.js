@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-thoughts-on-subliminal-learning-from-anthropic-team",
+        },{id: "post-game-theory-fair-division",
+        
+          title: "Game Theory: Fair Division",
+        
+        description: "I’ve always wanted to write about game theory but never did. Recently, I started flipping through my old game theory books and came across mechanism design. Today, I’ll mention something that I think you can also use in your life: division problems and their different variations.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2025/fair-division/";
+          
+        },
+      },{id: "post-thoughts-on-subliminal-learning-from-anthropic-team",
         
           title: "Thoughts on Subliminal Learning from Anthropic team",
         
