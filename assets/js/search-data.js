@@ -246,18 +246,15 @@ ninja.data = [{
             window.location.href = "/math/graph-theory/corona-product.html";
           
         },
-      },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+      },{id: "news-i-am-excited-to-announce-that-i-just-defended-my-thesis-more-details-to-come-soon",
+          title: 'I am excited to announce that I just defended my thesis! More details...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-a-new-blog-template-and-tidying-up-the-old-blog",
+          title: 'A new blog template and tidying up the old blog',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
