@@ -265,8 +265,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-",
-          title: '',
+            },},{id: "news-new-comments-system-is-live-the-previous-system-is-now-retired-and-archived-a-fresh-start-for-every-comment-section-of-all-posts-enjoy",
+          title: 'New Comments System is Live! The previous system is now retired and archived....',
           description: "",
           section: "News",},{
         id: 'social-email',
