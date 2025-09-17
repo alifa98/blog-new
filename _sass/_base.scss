@@ -1427,3 +1427,19 @@ figure.cover {
 mjx-container[jax="CHTML"][display="true"] {
   overflow-x: auto;
 }
+
+#markdown-content {
+  p {
+    text-align: justify;
+  }
+  font-size: 1.2rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 2rem;
+  }
+}
