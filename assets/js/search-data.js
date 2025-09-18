@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-game-theory-fair-division",
+        },{id: "post-from-words-to-worlds-dreaming-of-a-universal-language-of-space-time",
+        
+          title: "From Words to Worlds: Dreaming of a Universal Language of Space-Time",
+        
+        description: "In just a few years, large language models (LLMs) have transformed the AI landscape. From chatbots that write essays to systems that translate dozens of languages in real time, the field of natural language processing feels like it has blossomed into maturity. Text, with its neat sequence of tokens, has proven to be a wonderfully uniform substrate for machine learning. Give a model enough words, and it learns to reason, summarize, and even create. But what about the world beyond words, the world we move through, build on, and change every day?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2025/word-to-world/";
+          
+        },
+      },{id: "post-game-theory-fair-division",
         
           title: "Game Theory: Fair Division",
         
