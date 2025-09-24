@@ -4,7 +4,7 @@ title: 👋 About Me
 permalink: /about/
 subtitle: A Machine Learning and Mathematics Enthusiast
 nav: true
-nav_order: 4
+nav_order: 5
 profile:
   align: right
   image: general/profile_pic.jpg
