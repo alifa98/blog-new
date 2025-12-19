@@ -286,6 +286,9 @@ ninja.data = [{
             },},{id: "news-new-comments-system-is-live-the-previous-system-is-now-retired-and-archived-a-fresh-start-for-every-comment-section-of-all-posts-enjoy",
           title: 'New Comments System is Live! The previous system is now retired and archived....',
           description: "",
+          section: "News",},{id: "news-i-just-started-a-new-position-as-an-applied-machine-learning-scientist-at-td-bank-looking-forward-to-this-new-chapter",
+          title: 'I just started a new position as an Applied Machine Learning Scientist at...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
