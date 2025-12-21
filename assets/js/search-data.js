@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-from-words-to-worlds-dreaming-of-a-universal-language-of-space-time",
+        },{id: "post-nested-learning-a-new-hope-for-ai",
+        
+          title: "Nested Learning: a new HOPE for AI",
+        
+        description: "A team of researchers has proposed a novel view of neural networks called Nested Learning, basically it is a new view on how optimization and archtecture are the same thing using this to develope a method to update the model&#39;s knowledge without breaking existing capabilities.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2025/nested-learning/";
+          
+        },
+      },{id: "post-from-words-to-worlds-dreaming-of-a-universal-language-of-space-time",
         
           title: "From Words to Worlds: Dreaming of a Universal Language of Space-Time",
         
