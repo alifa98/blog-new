@@ -12,7 +12,7 @@ For the last decade, we've been operating under a specific mental model: Deep Le
 
 But a new paper from Google Research, presented at NeurIPS 2025, argues that this view is an illusion.
 
-The paper, titled **"Nested Learning: The Illusion of Deep Learning"**, proposes a radical shift: **Neural networks aren't just stacks of filters; they are systems of nested optimization problems**.
+The paper, titled **"The Illusion of Deep Learning Architectures"** [^NL_paper], proposes a radical shift: **Neural networks aren't just stacks of filters; they are systems of nested optimization problems**.
 Every layer in your model is actually a little "learner" trying to solve its own objective function in real-time.
 
 If you’ve ever wondered why Transformers are so good or how we can make models that actually *learn* after training, this paper offers a mathematical explanation that is surprisingly elegant.
@@ -84,3 +84,10 @@ This structure allows the model to be **Self-Modifying**. It doesn't just read d
 This paper is exciting because it moves us away from the black-box alchemy of "adding more layers". It gives us a white-box theoretical framework: **if you want a better architecture, design a better optimizer**.
 
 By unifying the math of *how we learn* (optimization) with *what we build* (architecture), Nested Learning suggests that the next generation of AI won't just be bigger, it will be smarter about how it manages its own mind.
+
+-- Ali
+
+
+## References
+
+[^NL_paper]: [Nested Learning: The Illusion of Deep Learning Architectures (NeurIPS 2025)](https://openreview.net/forum?id=nbMeRvNb7A)
