@@ -46,7 +46,7 @@ As of April 2026, I'm currently working on:
 
 - Machine learning @ TD Bank  
 - Topics related to LLMs and transformers  
-- Exploring more on word models
+- Exploring more on world models
 
 ### Open Source
 
@@ -54,7 +54,7 @@ I'm passionate about open-source! I've contributed to and developed projects, es
 
 ### Sports
 
-I love going to the gym, swimming, and cycling.
+I love going to gym, swimming, and cycling.
 I do like chess, but still a lot to learn.
 
 ### Contact
