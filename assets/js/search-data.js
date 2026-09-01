@@ -55,17 +55,6 @@ ninja.data = [{
             window.location.href = "/2026/cp-confidence-intervals/";
           
         },
-      },{id: "post-token-progression-in-large-language-models",
-        
-          title: "Token Progression in Large Language Models",
-        
-        description: "Toke Progression in Large Language Models",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/2026/token-progression-llm/";
-          
-        },
       },{id: "post-nested-learning-a-new-hope-for-ai",
         
           title: "Nested Learning: a new HOPE for AI",
