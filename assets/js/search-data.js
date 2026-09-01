@@ -44,7 +44,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/about/";
           },
-        },{id: "post-nested-learning-a-new-hope-for-ai",
+        },{id: "post-clopper-pearson-vs-blaker-exact-confidence-intervals-for-proportions",
+        
+          title: "Clopper-Pearson vs Blaker: Exact Confidence Intervals for Proportions",
+        
+        description: "A deep dive into the differences between Clopper-Pearson and Blaker&#39;s exact confidence intervals for proportions, exploring their mathematical foundations and practical implications in machine learning.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2026/cp-confidence-intervals/";
+          
+        },
+      },{id: "post-token-progression-in-large-language-models",
+        
+          title: "Token Progression in Large Language Models",
+        
+        description: "Toke Progression in Large Language Models",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/2026/token-progression-llm/";
+          
+        },
+      },{id: "post-nested-learning-a-new-hope-for-ai",
         
           title: "Nested Learning: a new HOPE for AI",
         
