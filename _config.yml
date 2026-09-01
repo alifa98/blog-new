@@ -88,7 +88,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 blog_name: Ali's Blog
 blog_description: A blog about machine learning, computer science, and more.
 permalink: /:year/:title/
-lsi: false # disable LSI index to avoid classifier-reborn zero-vector crashes on some posts
+lsi: true # disable LSI index to avoid classifier-reborn zero-vector crashes on some posts
 
 # Pagination
 pagination:
