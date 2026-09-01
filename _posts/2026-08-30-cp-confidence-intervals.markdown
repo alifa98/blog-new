@@ -7,7 +7,7 @@ categories: [Statistics]
 tags: [Statistics, Confidence Intervals, Clopper-Pearson, Blaker]
 ---
 
-On my day-to-day job, I am lucky to work with a lot of probability and statistics, and one of the concepts which we regularly see is that point estimates are not enough as a measure of performance in machine learning. For ML use cases, one of the interesting concepts is confidence intervals. For metrics which are proportional with y/n output (like pass rate, recall, precision), we can use Wilson or approximate with Normal. But as the sample size gets lower, or the point estimate concentrates around boundaries, the Normal distribution fails to approximate the correct metric distribution, so we have to opt for exact ones like Clopper-Pearson (CP) or Blaker's. But have you noticed that Blaker's is always a subset of Clopper-Pearson? Both use the exact distribution. What is the difference then?
+On my day-to-day job, I am lucky to work with a lot of statistics, and one of the concepts which we regularly see is that point estimates are not enough as a measure of performance in machine learning. For ML use cases, one of the interesting concepts is confidence intervals. For metrics which are proportional with y/n output (like pass rate, recall, precision [^propo]), we can use Wald/normal intervals as uncertainty around an estimated performance quantity. But as the sample size gets lower, or the point estimate concentrates around boundaries, the Normal distribution fails to approximate the correct metric distribution, so we have to opt for exact ones like Clopper-Pearson (CP) or Blaker's. But have you noticed that Blaker's is always a subset of Clopper-Pearson? Both use the exact distribution. What is the difference then?
 
 ### The Nature of Exactness and Over-Coverage
 
@@ -37,7 +37,7 @@ This rigid symmetric allocation means probability mass that falls below the $\al
 
 <div class="row">
     <div class="col-12 col-md-12 mx-auto d-block">
-        {% include figure.liquid path="/assets/img/CIs/clopper_pearson_plot.png" class="img-fluid" caption="Clopper-Pearson exact confidence interval bounds ($n=20$, $\alpha=0.05$). The shaded region represents the conservative coverage space necessitated by the rigid, independent $\alpha/2$ allocation applied to each tail of the discrete Binomial distribution" %}
+        {% include figure.liquid path="/assets/img/CIs/clopper_pearson_plot.png" class="img-fluid" caption="Clopper–Pearson confidence interval bounds for $n=20$ and $\alpha=0.05$. For each possible observed number of successes $k$, the shaded region shows the corresponding two-sided exact confidence interval obtained by equal-tail inversion of the Binomial distribution." %}
     </div>
 </div>
 
@@ -59,12 +59,15 @@ Blaker's formulation dynamically reallocates the unused error budget from the di
 
 $$C_{\text{Blaker}} \subseteq C_{\text{CP}}$$
 
-Blaker tightens the interval strictly by optimizing the error allocation, reducing the conservative penalty of the discrete PMF without violating the exact $\geq 1-\alpha$ guarantee.
+Blaker tightens the interval by optimizing the error allocation, reducing the conservative penalty of the discrete PMF without violating the exact $\geq 1-\alpha$ guarantee.
 
 <div class="row">
     <div class="col-12 col-md-12 mx-auto d-block">
-        {% include figure.liquid path="/assets/img/CIs/blakers_method_plot.png" class="img-fluid" caption="Blaker's method bounds overlaid against the Clopper-Pearson baseline space. The inner highlighted region demonstrates the dynamic error budget reallocation across both tails, visually proving the strict mathematical subset property $C_{\text{Blaker}} \subseteq C_{\text{CP}}$ through the elimination of unused conservative padding." %}
+        {% include figure.liquid path="/assets/img/CIs/blakers_method_plot.png" class="img-fluid" caption="Blaker confidence interval bounds compared with Clopper–Pearson bounds for $n=20$ and $\alpha=0.05$. The figure illustrates that the Blaker interval is contained within the corresponding Clopper–Pearson interval while generally producing tighter bounds. The Blaker limits shown here are obtained by numerical inversion of the Blaker acceptability function."%}
     </div>
 </div>
 
-* **Note on Computational Instability:** CP utilizes stable closed-form Beta distribution roots ($p_L = \text{Beta}^{-1}(\alpha/2; k, n-k+1)$). Blaker lacks closed-form inverses, requiring numerical root-finding. The discrete step-functions can trap these algorithms in local discontinuities, requiring pre-computed lookup tables for low-latency production deployment.
+* **Note on Computational Instability:** CP utilizes stable closed-form Beta distribution roots ($p_L = \text{Beta}^{-1}(\alpha/2; k, n-k+1)$). Blaker lacks closed-form inverses, requiring numerical root-finding.
+
+
+[^propo]: Treating recall and precision as binomial proportions requires some conditioning. For recall, the binomial denominator is the number of actual positives, (TP+FN); for precision, it is the number of predicted positives, (TP+FP). Thus, under iid evaluation data and a fixed classifier, binomial confidence intervals can be applied conditional on these denominators. These intervals quantify uncertainty due to the finite evaluation sample; they do not capture additional uncertainty from retraining the model, hyperparameter selection, correlated observations, or distribution shift.
