@@ -70,4 +70,10 @@ Blaker tightens the interval by optimizing the error allocation, reducing the co
 * **Note on Computational Instability:** CP utilizes stable closed-form Beta distribution roots ($p_L = \text{Beta}^{-1}(\alpha/2; k, n-k+1)$). Blaker lacks closed-form inverses, requiring numerical root-finding.
 
 
+_Disclaimer: The ideas and initial draft of this post are written by me, but I used an AI tool to help refine the grammar and structure._
+
+-- Ali
+
+
+
 [^propo]: Treating recall and precision as binomial proportions requires some conditioning. For recall, the binomial denominator is the number of actual positives, (TP+FN); for precision, it is the number of predicted positives, (TP+FP). Thus, under iid evaluation data and a fixed classifier, binomial confidence intervals can be applied conditional on these denominators. These intervals quantify uncertainty due to the finite evaluation sample; they do not capture additional uncertainty from retraining the model, hyperparameter selection, correlated observations, or distribution shift.
