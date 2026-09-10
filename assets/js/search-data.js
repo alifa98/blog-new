@@ -314,6 +314,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-received-the-eecs-outstanding-thesis-award-for-the-2025-2026-academic-year-at-york-university",
           title: 'I have received the EECS Outstanding Thesis Award for the 2025–2026 academic year...',
           description: "",
+          section: "News",},{id: "news-i-have-started-my-journey-to-visit-all-the-provinces-in-canada-starting-from-st-john-s-easternmost-to-victoria-westernmost-i-will-take-about-a-month-including-all-sorts-of-transportation",
+          title: 'I have started my journey to visit all the provinces in Canada starting...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
